@@ -1,0 +1,46 @@
+<div class="container-fluid">
+    <div class="row">
+      <!-- Left part -->
+      <div class="col-md-6 bg-light p-4">
+        <div class="text-center" style="background-color: rgb(68, 68, 119)">
+            <img src="../../../assets/images/Group.png" alt="Application Logo" class="img-fluid">
+          </div>
+      </div>
+  
+      <!-- Right part -->
+      <div class="col-md-6 bg-primary text-white p-4">
+        <div class="card card-login shadow-lg">
+            <div class="card-body">
+              <h2 class="card-title mb-4" style="font-size: 30px;">Bienvenue chez Proote</h2>
+              <p class="header-info" style="font-size: 11px;">Pour accéder a votre plateforme, remplissez les champs de connexion</p>
+              <form [formGroup]="loginForm" (ngSubmit)="onLogin()">
+                <div class="form-group">
+                  <label for="email" style="font-size: 12px;">Email:</label>
+                  <input type="email" id="email" formControlName="email" class="form-control border-dark">
+                </div>
+                <div class="form-group">
+                  <label for="password" style="font-size: 12px;">Mot de passe: <a href="" class="forgetPassword-link">mot de passe oublié ?</a> </label>
+                  <input  type="{{ showPassword ? 'text' : 'password' }}" id="password" formControlName="password" class="form-control border-dark">
+                  <span class="input-group-text show-password-icon" (click)="togglePassword()">
+                    <i class="far" [ngClass]="showPassword ? 'fa-eye-slash' : 'fa-eye'"></i>
+                  </span>
+                </div><br>
+                
+                <div class="row d-grid">
+                  <div class="col-sm-12 d-grid">
+                    <button [disabled]="isLoggingIn" type="submit" class="btn btn-light btn-block" (click)="onLogin()">{{ isLoggingIn ? 'Connexion en cours...' : 'Connexion' }}</button> 
+                  </div>
+                   <!-- Display the error message -->
+                  <div *ngIf="errorMessage" class="alert alert-danger mt-3">
+                    {{ errorMessage }}
+                  </div>
+                  <p class="info">Vous n'avez pas encore de compte ? <a href="">S'incrire ici</a></p>
+                </div>
+                
+              </form>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+  
