@@ -9,8 +9,8 @@ export class AuthService {
 
   constructor(private http: HttpClient) { }
 
-  signup(email: string, password: string) {
-    const body = { email, password };
+  signup(email: string, password: string,nom:string,prenom:string,telephone:string,entreprise:string,ville:string,type:string) {
+    const body = { email, password,nom,prenom,telephone,entreprise,ville,type };
     return this.http.post<any>(`${this.apiUrl}/signup`, body);
   }
 
@@ -18,4 +18,5 @@ export class AuthService {
     const body = { email, password };
     return this.http.post<any>(`${this.apiUrl}/login`, body);
   }
+
 }

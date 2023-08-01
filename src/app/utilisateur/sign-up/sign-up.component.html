@@ -1,1 +1,57 @@
-<p>sign-up works!</p>
+<div class="container-fluid">
+    <div class="row">
+      <!-- Left part -->
+      <div class="col-md-7 bg-light" style="padding-top: 150px;">
+        <div class="card card-login shadow-md">
+          <div class="card-body">
+            <h2 class="card-title mb-4" style="font-size: 30px;">Créez votre compte</h2>
+            <p class="header-info" style="font-size: 9px;">Envoyez vos premiers sms en quelques minutes-pas de carte de credit requise</p>
+            <form [formGroup]="signinForm">
+              <div *ngIf="currentStep===1">
+                <div class="form-group">
+                    <label for="email" style="font-size: 10px;">Veuillez saisir votre adresse email professionnel</label>
+                    <input type="email" id="email" formControlName="email" class="form-control border-dark emails">
+                </div><br><br>
+                <div class="col-sm-12 d-grid">
+                    <button type="submit" class="btn btn-light btn-block" (click)="nextStep()">Suivant</button> 
+                </div><br>
+                <div class="row d-grid">
+                  <p class="info">Vous avez déja un compte ? <a href="" routerLink="/login">Connexion</a></p>
+                </div>
+              </div>
+              
+              <div *ngIf="currentStep===2">
+                <div class="form-group">
+                    <label for="password" style="font-size: 10px;">Veuillez saisir votre mot de passe</label>
+                    <input type="password" class="form-control border-dark" formControlName="password" id="password">
+                </div>
+                <div class="form-group">
+                  <label for="cpassword" style="font-size: 10px;">Confirmez votre mot de passe</label>
+                  <input type="password" class="form-control border-dark" id="password-confirm" formControlName="confirmPassword">
+                </div><br><br>
+                <div class="row d-grid">
+                   <div class="col-sm-12 d-grid">
+                      <button class="btn btn-light btn-block" (click)="nextStep()">Suivant</button>
+                   </div>
+                </div><br>
+              </div>
+              <div *ngIf="currentStep===3">
+                <app-user-more-info></app-user-more-info>
+              </div>
+             
+              
+            </form>
+          </div>
+        </div><br>
+        <p style="font-size: 11px;padding-left: 190px;">En vous inscrivant, vous creéz un compte et vous acceptez <a href=""> les Conditions <br> d'utilisation</a>  et la <a href="">Politique de confidentialité.</a></p>
+      </div>
+  
+      <!-- Right part -->
+      <div class="col-md-5 text-white p-20">
+        <div class="text-center" >
+          <img style="background-color: rgb(68, 68, 119)"  src="../../../assets/images/Group.png" alt="Application Logo" class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </div>
+  

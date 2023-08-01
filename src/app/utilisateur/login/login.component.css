@@ -28,7 +28,7 @@
     font-weight: bold;
   }
   .card-login {
-    width: 400px; /* Set your desired width here */
+    width: 500px; /* Set your desired width here */
   }
   .info{
     margin-top: 10px;
@@ -51,7 +51,7 @@
 
 }
 .forgetPassword-link{
-  padding-left:205px;
+  padding-left:300px;
   font-size:8.5px
 }
 .show-password-icon i {

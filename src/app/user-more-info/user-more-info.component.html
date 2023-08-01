@@ -1,0 +1,59 @@
+<div [formGroup]="signinForm">
+<div class="row">
+    <div class="col-md-6">
+        <label>
+            <input type="radio" formControlName="type" [value]="'Professionnel'"> Professionnel
+        </label>
+    </div>
+    <div class="col-md-6">
+        <label>
+            <input type="radio" formControlName="type" [value]="'Particulier'"> Particulier
+        </label>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-6">
+    <div class="form-group">
+        <label for="prenom" style="font-size: 10px;">Prénom</label>
+        <input type="text" class="form-control border-dark" formControlName="prenom" id="prenom">
+    </div>
+    </div>
+    <div class="col-md-6">
+    <div class="form-group">
+        <label for="nom" style="font-size: 10px;">Nom</label>
+        <input type="text" class="form-control border-dark" id="nom" formControlName="nom" >
+    </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <div class="form-group">
+            <label for="entreprise" style="font-size: 10px;">Entreprise/Organisation</label>
+            <input type="text" class="form-control border-dark" id="entreprise" formControlName="entreprise">
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-4">
+        <div class="form-group">
+            <label for="ville" style="font-size: 10px;">Ville</label>
+            <input type="text" class="form-control border-dark"  id="ville" formControlName="ville">
+        </div>
+    </div>
+    <div class="col-md-8">
+        
+        <div class="form-group">
+            <label for="telephone" style="font-size: 10px;">Numéro de téléphone</label>
+            <!-- Use ngx-intl-tel-input for phone number input -->
+            <input type="tel" name="telephone" id="phone"  class="form-control border-dark telephone2" formControlName="telephone">
+        
+        </div>
+    </div>
+</div>
+<br><br>
+<div class="row d-grid">
+    <div class="col-sm-12 d-grid">
+       <button class="btn btn-light btn-block" type="submit" (click)="submitForm()">Sauvegarder</button>
+    </div>
+ </div><br>
+</div>

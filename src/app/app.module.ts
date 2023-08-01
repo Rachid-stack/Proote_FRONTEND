@@ -32,7 +32,9 @@ import { EditPlanComponent } from './plan/edit-plan/edit-plan.component';
 import { DeletePlanComponent } from './plan/delete-plan/delete-plan.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
 import { NavbarComponent } from './navbar/navbar.component';
-
+import { ToastrModule } from 'ngx-toastr';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { UserMoreInfoComponent } from './user-more-info/user-more-info.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -62,7 +64,8 @@ import { NavbarComponent } from './navbar/navbar.component';
     EditPlanComponent,
     DeletePlanComponent,
     SidenavComponent,
-    NavbarComponent
+    NavbarComponent,
+    UserMoreInfoComponent
   ],
   imports: [
     BrowserModule,
@@ -70,7 +73,8 @@ import { NavbarComponent } from './navbar/navbar.component';
     FormsModule,
     NgxSpinnerModule,
     HttpClientModule,
-    AppRoutingModule
+    ToastrModule.forRoot(), // Add this line to import the ToastrModule
+    AppRoutingModule, BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
