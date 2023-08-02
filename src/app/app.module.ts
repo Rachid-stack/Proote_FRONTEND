@@ -35,6 +35,12 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { ToastrModule } from 'ngx-toastr';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { UserMoreInfoComponent } from './user-more-info/user-more-info.component';
+import { HeaderComponent } from './header/header.component';
+import { Body1Component } from './body1/body1.component';
+import { Body2Component } from './body2/body2.component';
+import { Body3Component } from './body3/body3.component';
+import { ComposantCombineComponent } from './composant-combine/composant-combine.component';
+import { AcceuilComponent } from './acceuil/acceuil.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -65,7 +71,13 @@ import { UserMoreInfoComponent } from './user-more-info/user-more-info.component
     DeletePlanComponent,
     SidenavComponent,
     NavbarComponent,
-    UserMoreInfoComponent
+    UserMoreInfoComponent,
+    HeaderComponent,
+    Body1Component,
+    Body2Component,
+    Body3Component,
+    ComposantCombineComponent,
+    AcceuilComponent
   ],
   imports: [
     BrowserModule,

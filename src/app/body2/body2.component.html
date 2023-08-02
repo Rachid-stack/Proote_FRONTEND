@@ -1,0 +1,85 @@
+<style>
+    .text {
+        color: #0B0146;
+        font-family: Montserrat;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        text-align: left;
+    }
+    
+    .img {
+        height: 45%;
+    }
+    
+    .rectangle-container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 40vh;
+        padding: 50px;
+    }
+    
+    .rectangle {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+        width: 400px;
+        height: 200px;
+    }
+    
+    @media (max-width: 768px) {
+        /* Réduire la taille du texte pour les écrans jusqu'à 768 pixels de largeur */
+        .text {
+            font-size: 16px;
+        }
+    }
+    
+    @media (max-width: 480px) {
+        /* Réduire encore plus la taille du texte pour les écrans jusqu'à 480 pixels de largeur */
+        .text {
+            font-size: 14px;
+        }
+    }
+</style>
+
+<body>
+    <header style="color: #221088;
+    font-family: Montserrat;
+    font-size: 51px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding: 20px;
+      text-align: center;     ">
+        Pour atteindre vos clients, PROOTE vous aides à
+    </header>
+
+
+    <div class="rectangle-container ">
+        <div class="rectangle ">
+
+            <img class="img" src="../assets/images/groupa.png" alt="Image 1 ">
+            <p class="text">Centraliser et optimiser
+                <br> vos marketing pour
+                <br> une gestion efficace</p>
+        </div>
+        <div class="rectangle ">
+            <img class="img" src="../assets/images/groupb.png " alt="Image 2 ">
+            <p class="text">Cibler avec précision pour <br>des messages captivants <br>et pertinents</p>
+        </div>
+        <div class="rectangle ">
+            <img class="img" src="../assets/images/groupc.png" alt="Image 3 ">
+            <p class="text">Personnaliser vos e-mails et <br>SMS pour une communication <br>engageante</p>
+        </div>
+        <div class="rectangle ">
+            <img class="img" src="../assets/images/groupd.png" alt="Image 4 ">
+            <p class="text">Automatiser vos <br>campagnes marketing <br>e-mail et SMS</p>
+        </div>
+    </div>
+
+
+</body>
