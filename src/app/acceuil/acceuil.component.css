@@ -1,0 +1,84 @@
+.body {
+  
+    background-size: cover;
+    display: flex;
+    height: 100vh;
+    background-image: url("../../assets/images/linear.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 1000px;
+}
+
+.left-section {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 554.149px;
+    flex-shrink: 0;
+    margin-top: 100px;
+}
+
+.left-section p {
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.buttons {
+    text-align: center;
+}
+
+.right-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 117.818px;
+    height: 594.149px;
+    flex-shrink: 0;
+    margin-top: 100px;
+}
+
+.right-section img {
+    max-width: 300%;
+    max-height: 300%;
+    margin-bottom: 200px;
+    margin-right:50px
+}
+
+.paragraph {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    padding-right: 250px;
+}
+
+.button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.btn {
+    margin-top: 80px;
+    background-color: #007bff;
+    color: #fff;
+    margin: 20px;
+}
+
+.blanc {
+    color: #fff;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+}

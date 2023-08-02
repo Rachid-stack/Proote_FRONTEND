@@ -2,19 +2,19 @@
   <div class="row">
     <!-- Left part -->
     <div class="col-md-7 bg-light" style="padding-top: 150px;">
-      <div class="card card-login">
+      <div class="card card-login shadow-lg">
         <div class="card-body">
-          <h2 class="card-title mb-4" style="font-size: 30px;">Bienvenue chez Proote</h2>
-          <p class="header-info" style="font-size: 11px;">Pour accéder a votre plateforme, remplissez les champs de connexion</p>
+          <h2 class="card-title mb-4" style="font-size: 30px;font-weight: 600;">Bienvenue chez Proote</h2>
+          <p class="header-info" style="font-size: 11px;font-weight: 200;">Pour accéder a votre plateforme, remplissez les champs de connexion</p>
           <form [formGroup]="loginForm" (ngSubmit)="onLogin()">
             <div class="form-group">
               <label for="email" style="font-size: 12px;">Email:</label>
-              <input type="email" id="email" formControlName="email" class="form-control border-dark">
+              <input type="email" id="email" formControlName="email" class="form-control border-dark shadow-md">
             </div>
             
             <div class="form-group">
               <label for="password" style="font-size: 12px;">Mot de passe: <a href="" class="forgetPassword-link">mot de passe oublié ?</a> </label>
-              <input  type="{{ showPassword ? 'text' : 'password' }}" id="password" formControlName="password" class="form-control border-dark">
+              <input  type="{{ showPassword ? 'text' : 'password' }}" id="password" formControlName="password" class="form-control border-dark shadow-md">
               <span class="input-group-text show-password-icon" (click)="togglePassword()">
                 <i class="far" [ngClass]="showPassword ? 'fa-eye-slash' : 'fa-eye'"></i>
               </span>

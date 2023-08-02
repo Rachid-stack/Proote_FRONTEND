@@ -2,15 +2,15 @@
     <div class="row">
       <!-- Left part -->
       <div class="col-md-7 bg-light" style="padding-top: 150px;">
-        <div class="card card-login shadow-md">
+        <div class="card card-login shadow-lg">
           <div class="card-body">
-            <h2 class="card-title mb-4" style="font-size: 30px;">Créez votre compte</h2>
-            <p class="header-info" style="font-size: 9px;">Envoyez vos premiers sms en quelques minutes-pas de carte de credit requise</p>
+            <h2 class="card-title mb-4" style="font-size: 30px; font-weight: 600;">Créez votre compte</h2>
+            <p class="header-info" style="font-size: 11px;">Envoyez vos premiers sms en quelques minutes-pas de carte de credit requise</p>
             <form [formGroup]="signinForm">
               <div *ngIf="currentStep===1">
                 <div class="form-group">
-                    <label for="email" style="font-size: 10px;">Veuillez saisir votre adresse email professionnel</label>
-                    <input type="email" id="email" formControlName="email" class="form-control border-dark emails">
+                    <label for="email" style="font-size: 11px;">Veuillez saisir votre adresse email professionnel</label>
+                    <input type="email" id="email" formControlName="email" class="form-control border-dark emails shadow-md">
                 </div><br><br>
                 <div class="col-sm-12 d-grid">
                     <button type="submit" class="btn btn-light btn-block" (click)="nextStep()">Suivant</button> 
@@ -22,12 +22,12 @@
               
               <div *ngIf="currentStep===2">
                 <div class="form-group">
-                    <label for="password" style="font-size: 10px;">Veuillez saisir votre mot de passe</label>
-                    <input type="password" class="form-control border-dark" formControlName="password" id="password">
+                    <label for="password" style="font-size: 11px;">Veuillez saisir votre mot de passe</label>
+                    <input type="password" class="form-control border-dark shadow-md" formControlName="password" id="password">
                 </div>
                 <div class="form-group">
-                  <label for="cpassword" style="font-size: 10px;">Confirmez votre mot de passe</label>
-                  <input type="password" class="form-control border-dark" id="password-confirm" formControlName="confirmPassword">
+                  <label for="cpassword" style="font-size: 11px;">Confirmez votre mot de passe</label>
+                  <input type="password" class="form-control border-dark shadow-md" id="password-confirm" formControlName="confirmPassword">
                 </div><br><br>
                 <div class="row d-grid">
                    <div class="col-sm-12 d-grid">
