@@ -41,6 +41,7 @@ import { Body2Component } from './body2/body2.component';
 import { Body3Component } from './body3/body3.component';
 import { ComposantCombineComponent } from './composant-combine/composant-combine.component';
 import { AcceuilComponent } from './acceuil/acceuil.component';
+import { Body4Component } from './body4/body4.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -77,7 +78,8 @@ import { AcceuilComponent } from './acceuil/acceuil.component';
     Body2Component,
     Body3Component,
     ComposantCombineComponent,
-    AcceuilComponent
+    AcceuilComponent,
+    Body4Component
   ],
   imports: [
     BrowserModule,
