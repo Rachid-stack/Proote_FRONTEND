@@ -2,3 +2,8 @@
 /* styles.css */
 @import '~intl-tel-input/build/css/intlTelInput.css';
 
+body {
+    overflow-x: hidden; /* Hide horizontal scrollbar, if present */
+    
+  }
+  
